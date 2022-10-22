@@ -18,4 +18,33 @@ public class OddIndicesTest {
 
         Assert.assertEquals(actualResult, expectedResult);
     }
+    @Test
+    public void testOddIndicesArrayOfOne () {
+        int[] array = {-45};
+        int[] expectedResult = {};
+
+        int[] actualResult = new OddIndices().getOddIndicesArray(array);
+
+        Assert.assertEquals(actualResult, expectedResult );
+    }
+
+    @Test
+    public void testOddIndicesArrayOfNull () {
+        int[] array = null;
+        int[] expectedResult = {};
+
+        int[] actualResult = new OddIndices().getOddIndicesArray(array);
+
+        Assert.assertEquals(actualResult, expectedResult );
+    }
+
+    @Test
+    public void testOddIndicesArrayOfEmpty () {
+        int[] array = {};
+        int[] expectedResult = {};
+
+        int[] actualResult = new OddIndices().getOddIndicesArray(array);
+
+        Assert.assertEquals(actualResult, expectedResult );
+    }
 }
