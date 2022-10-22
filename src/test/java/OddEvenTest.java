@@ -53,8 +53,8 @@ public class OddEvenTest {
        int number = Integer.MIN_VALUE + 1;
         String expectedResult = "Undefined";
 
-        OddEven oddEvenAlgorithm = new OddEven();
-        String actualResult = oddEvenAlgorithm.oddEven(number);
+        OddEven oddEven = new OddEven();
+        String actualResult = oddEven.oddEven(number);
 
         Assert.assertEquals(expectedResult, actualResult);
 
