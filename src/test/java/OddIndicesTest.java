@@ -1,9 +1,6 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class OddIndicesTest {
     /**
      * Test Data:
@@ -13,16 +10,12 @@ public class OddIndicesTest {
 
     @Test
     public void  testOddIndicesHappyPath (){
-        int[] arr = {-45, 590, 234, 985, 12, 68};
+        int[] input = {-45, 590, 234, 985, 12, 68};
         int[] expectedResult =  {590, 985, 68};
 
         OddIndices oddIndices = new OddIndices();
-        int[] actualResult = oddIndices.getOddIndicesArray(arr);
+        int[] actualResult = oddIndices.getOddIndicesArray(input);
 
-//        System.out.println(Arrays.toString(expectedResult));
-//        System.out.println(Arrays.toString(actualResult));
-
-       // Assert.assertEquals(expectedResult, actualResult);
         Assert.assertEquals(actualResult, expectedResult);
     }
 }
